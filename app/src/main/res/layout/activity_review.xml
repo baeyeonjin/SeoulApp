@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/border"
+        >
+
+        <TextView
+            android:id="@+id/Txt_Menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:background="#787878"
+            android:paddingTop="10dp"
+            android:text="리뷰"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="8pt" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="#333333">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:gravity="center"
+            android:text="평점 : "
+            android:textColor="#FFFFFF"
+            android:textSize="6pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Average"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0.0 "
+            android:textColor="#FFFFFF"
+            android:textSize="6pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=" / 5.0 "
+            android:textColor="#FFFFFF"
+            android:textSize="6pt"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/ratingBar3"
+            style="@style/starRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:isIndicator="true"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ReviewBtn2"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="end"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/review" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/warn_review"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/warn"
+        android:visibility="invisible"/>
+
+    <com.example.junhyeong.myapplication.widget.IndexableListView2
+        android:id="@+id/listview_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
+</FrameLayout>
+
+</LinearLayout>

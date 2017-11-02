@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.junhyeong.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.DIAL_PHONE" />
+
+
+    <application
+        android:name=".GlobalApplication.GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo2"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyBImELrD4HiMh3QmiPlmt4qvOnBVjuUa8w"/>
+
+        <activity
+            android:name=".Splash.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme2">
+        </activity>
+        <activity android:name=".Login.KakaoSignupActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Select.Select_MenuActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Select.Select_LocationActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Main.MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Popup.PopupActivity_Local"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Popup.PopupActivity_Menu"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Google.MapsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Select.Select_MyPage_Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Review.Review_Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Review.Review_write_Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Review.Review_modification_Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Popup.PopupActivity_Login"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Popup.PopupActivity_Description"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Popup.PopupActivity_Logout"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Popup.PopupActivity_Explain"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Review.Review_view_Activity"
+        android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Popup.PopupActivity_end"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"
+            android:screenOrientation="portrait"/>
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+    </application>
+</manifest>

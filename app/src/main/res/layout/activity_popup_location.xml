@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/round2"
+    android:padding="10dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id = "@+id/pop1"
+                    android:onClick = "onClick"
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/gangseo" />
+
+                <ImageView
+                    android:id = "@+id/pop2"
+                    android:onClick = "onClick"
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/gangnam" />
+
+                <ImageView
+                    android:id = "@+id/pop3"
+                    android:onClick = "onClick"
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/gangdong" />
+
+                <ImageView
+                    android:id="@+id/pop4"
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/gangbuk" />
+
+                <ImageView
+                    android:id="@+id/pop5"
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+
+                    android:src="@drawable/gwanak" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id = "@+id/pop6"
+                    android:onClick = "onClick"
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/gwangjin"/>
+
+                <ImageView
+                    android:id="@+id/pop7"
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/guro" />
+
+                <ImageView
+                    android:id="@+id/pop8"
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/geumcheon" />
+
+                <ImageView
+                    android:id="@+id/pop9"
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/nowon" />
+
+                <ImageView
+                    android:id="@+id/pop10"
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:layout_marginTop="5dp"
+
+                    android:src="@drawable/dobong" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/pop11"
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/dongdae" />
+
+                <ImageView
+                    android:id="@+id/pop12"
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/dongjak" />
+
+                <ImageView
+                    android:id="@+id/pop13"
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/mapo" />
+
+                <ImageView
+                    android:id="@+id/pop14"
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/seodae" />
+
+                <ImageView
+                    android:id="@+id/pop15"
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/seocho" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/pop16"
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/seongdong" />
+
+                <ImageView
+                    android:id="@+id/pop17"
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/seongbuk" />
+
+                <ImageView
+                    android:id="@+id/pop18"
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/songpa" />
+
+                <ImageView
+                    android:id="@+id/pop19"
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/yangcheon" />
+
+                <ImageView
+                    android:id="@+id/pop20"
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ydp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/pop21"
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/yongsan" />
+
+                <ImageView
+                    android:id="@+id/pop22"
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ep" />
+
+                <ImageView
+                    android:id="@+id/pop23"
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/jongro" />
+
+                <ImageView
+                    android:id="@+id/pop24"
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/junggu" />
+
+                <ImageView
+                    android:id="@+id/pop25"
+                    android:layout_width="65dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/jungrang" />
+            </LinearLayout>
+
+
+</LinearLayout>

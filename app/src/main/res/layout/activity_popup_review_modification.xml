@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#E8E8E8"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#787878"
+
+            >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:text="리뷰 수정/삭제"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="7pt"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/move"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:paddingTop="10dp"
+                android:layout_marginRight="5dp"
+                android:onClick="onClick"
+                android:src="@drawable/mypage_move" />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#333333"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/Value2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7dp"
+                android:paddingTop="15dp"
+                android:text=" 1.0 "
+                android:textAlignment="center"
+                android:textSize="10pt"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textSize="10pt"
+                android:paddingTop="15dp"
+                android:textColor="#FFFFFF"
+                android:textAlignment="center"
+                android:text="/ 5.0 " />
+
+            <RatingBar
+                android:id="@+id/ratingBar2"
+                style="@style/starRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:rating="1"
+                android:stepSize="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/ReviewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:maxLength="20"
+                android:hint="제목"
+                android:layout_margin="7dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/round2"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/ReviewBody"
+                android:layout_width="match_parent"
+                android:layout_height="261dp"
+                android:layout_margin="7dp"
+                android:background="@drawable/round2"
+                android:hint="내용"
+                android:inputType="textMultiLine"
+                android:maxLength="200"
+                android:padding="10dp"
+                android:scrollHorizontally="true" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:layout_weight="0.2">
+
+            <ImageView
+                android:id="@+id/btnModification"
+                android:layout_width="110dp"
+                android:layout_height="38dp"
+                android:layout_alignTop="@+id/btnDelete"
+                android:layout_gravity="center"
+                android:layout_marginEnd="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_toLeftOf="@+id/btnDelete"
+                android:layout_toStartOf="@+id/btnDelete"
+                android:onClick="onClick"
+                android:src="@drawable/modi"
+                android:text="수정"></ImageView>
+
+            <ImageView
+                android:id="@+id/btnDelete"
+                android:layout_width="110dp"
+                android:layout_height="38dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:onClick="onClick"
+                android:src="@drawable/delete"
+                android:text="삭제"></ImageView>
+
+            <ImageView
+                android:id="@+id/btnClose"
+                android:layout_width="110dp"
+                android:layout_height="38dp"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:layout_toEndOf="@+id/btnDelete"
+                android:layout_toRightOf="@+id/btnDelete"
+                android:onClick="onClick"
+                android:src="@drawable/cancel"
+                android:text="취소" />
+        </RelativeLayout>
+
+</LinearLayout>
